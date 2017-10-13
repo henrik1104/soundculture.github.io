@@ -1,0 +1,312 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+.snip1555 {
+  font-family: 'Muli', Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  line-height: 1em;
+  margin: 15px 40px;
+  text-transform: uppercase;
+}
+.snip1555 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 0.6em;
+  padding: 12px 15px;
+  position: relative;
+}
+.snip1555 li a {
+  color: darkblue;
+  text-decoration: none;
+}
+.snip1555 li:before,
+.snip1555 li:after {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  height: 2px;
+  width: 35%;
+  background-color: hotpink;
+  position: absolute;
+  content: '';
+  opacity: 0;
+}
+.snip1555 li:before {
+  top: 0;
+  left: 0;
+}
+.snip1555 li:after {
+  bottom: 0;
+  right: 0;
+}
+.snip1555 li:hover:before,
+.snip1555 li.hover:before,
+.snip1555 li:hover:after,
+.snip1555 li.hover:after {
+  opacity: 1;
+}
+.snip1555 li:hover:before,
+.snip1555 li.hover:before {
+  left: 65%;
+}
+.snip1555 li:hover:after,
+.snip1555 li.hover:after {
+  right: 65%;
+}
+/* Demo purposes only */
+body {
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+#fremhev {
+    font-weight: bold;
+}
+.rapper {
+   font-style: italic; 
+}
+
+p{
+    hyphens: auto;
+    margin: 10, 50, 10, 50;
+}
+
+h4{
+    hyphens: auto;
+    text-align: center;
+}
+
+.rapper{
+    list-style-type: none;
+    text-align: center;
+}
+
+.oversigt{
+float: left;
+margin-left: 200px;
+margin-right: 200px;
+margin-bottom: 30px;
+
+
+}
+
+.newspaper {
+   text-align: justify;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+h1,h1,h3,h4,h5{
+    font-family: 'El Messiri', sans-serif;
+}
+
+.image { 
+   position: relative ; 
+   width: 100%; /* for IE 6 */
+}
+
+.footer {
+   float: none;
+    align-content: center;    
+   bottom: 10%;
+   width: 100%;
+   background-color: black;
+   color: white;
+   ;
+}
+.social{
+    display: inline;
+    
+}
+.container {
+    position: relative;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 180px;
+    right: 180px;
+    font-size: 18px;
+    color: white;
+    text-align: inherit;
+    background-color: black
+}
+
+#img { 
+    width: 10;
+    height: auto;
+    opacity: 0.;
+}
+#p{
+    float: inline: left;
+    border-style: solid;
+    text-align: left;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 520px; 
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+#p2{
+    float: inline: left;
+    border-style: solid;
+    text-align: left;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 520px; 
+    padding-right: 20px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+#p3{
+    float: inline: left;
+    border-style: solid;
+    text-align: left;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 520px; 
+    padding-right: 20px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+
+.button {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+--/! Nyhedsbrev !/-- 
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+$red: #e74c3c;
+
+*, 
+*:before, 
+*:after {
+   @include box-sizing(border-box); 
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+   text-align: center;
+   color: black;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+}
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+#input-submit {
+     color: white; 
+     background: $red;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 130px;
+      width: 300px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.home-newsletter {
+padding: 80px 0;
+background: whitesmoke;
+}
+
+.home-newsletter .single {
+max-width: 650px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+z-index: 2; }
+.home-newsletter .single h2 {
+font-size: 22px;
+color: darkblue;
+text-transform: uppercase;
+margin-bottom: 40px; }
+.home-newsletter .single .form-control {
+height: 50px;
+background: rgba(255, 255, 255, 0.6);
+border-color: transparent;
+border-radius: 20px 0 0 20px; }
+.home-newsletter .single .form-control:focus {
+box-shadow: none;
+border-color: darkblue; }
+.home-newsletter .single .btn {
+min-height: 50px; 
+border-radius: 0 20px 20px 0;
+background: darkblue;
+color: #fff;
+}
